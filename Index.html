@@ -1,0 +1,305 @@
+<html>
+<head>
+    <title>
+    </title>
+    <script src="jquery.js"></script>
+    <link href="materialize/css/materialize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="materialize/js/materialize.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+</head>
+<body>
+<img id="startup" src="start1.png"/>
+<div class="row" style="margin-bottom: 0;">
+    <div class="col s8 offset-s2 center ">
+        <a href="http://idearun.co/"> <img src="img/logo.png" style="margin-top:20px;"> </a>
+    </div>
+</div>
+<div class="row" id="p1">
+    <div class="col s8 offset-s2 center " id="msg1">
+        <h2 class="header1" style="margin-top: 10px;"> Evaluate & Validate Your Ideas</h2>
+        <h3>By Professionals For FREE</h3>
+        <p style="letter-spacing:1px;font-size: 20px;">Simply hit the start button, and our professional team from
+            Idearun will evaluate and validate every aspect of your ideas personally. At the end, You will get an score
+            from 0 to 10 plus personalized tips on how to improve your score and idea.</p>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col s8 offset-s2 center">
+        <button id='Start' class="sumbit btn waves-effect waves-light" type="submit" name="Start"
+                style="padding-left:20px;"><img src="startup.svg" width="20px"/> Start
+        </button>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 0;">
+    <div class="col s2"></div>
+
+    <div class="col s8 z-depth-3 center " id="form1">
+        <div class="progress col s8 offset-s2">
+            <div class="determinate" style="width:14%"></div>
+        </div>
+        <br/>
+        <form id="RegisterForm" action="https://formspree.io/mellica.sharifi@yahoo.com">
+            <div class="current" id="first" data-step="1">
+                <div class="row">
+
+                    <h5 class="headernote">Validate & Evaluate Your Idea </h5>
+
+                    <p class="headernote2">We will not share this
+                        information with any third parties.<br/>
+                        Please fill the information very carefully otherwise your score will not be accurate.</p>
+                    <div class="counterNote" style="margin-top:0;padding:0;margin-bottom: 20px;"> 1/7</div>
+
+                    <div class="input-field col s6" style="display:none;">
+                        <input id="icon_prefix" type="text" class="validate" name="full-name" required>
+                        <label for="icon_prefix">Your Full Name</label>
+                    </div>
+                    <div class="input-field col s6" style="display:none;">
+                        <input id="contact_number" type="text" class="validate" name="number" required>
+                        <label for="contact_number">Your Contact number</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12" style="display:none;">
+                        <input id="email" type="email" class="validate" name="Email" required>
+                        <label for="email" data-error="Invalid Email">Email</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="next" style="display:none;" data-step="2">
+                <div class="row">
+                    <h5 class="headernote">Tell us about your idea</h5>
+                    <div class="counterNote"> 2/7</div>
+                    <div class="input-field col s6">
+                        <input id="IdeaName" type="text" class="validate" name="Idea-Name">
+                        <label for="IdeaName">Your Idea Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 center">
+                        <input id="IdeaEx" type="text" class="validate" name="idea-in-one-paragraph">
+                        <label for="IdeaEx">Explane your idea in one paragraph</label>
+                    </div>
+                </div>
+            </div>
+            <div class="next" style="display:none;" data-step="3">
+                <div class="row">
+                    <h5 class="headernote">Tell us about your team </h5>
+                    <div class="counterNote"> 3/7</div>
+                    <div class="input-field col s6">
+                        <input id="Founders" type="text" class="validate" name="Founders">
+                        <label for="Founders">How many Founders? *</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="Members" type="text" class="validate" name="members">
+                        <label for="Members">How many team members in total?(Full-time)</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="YourTeam" type="text" class="validate" name="your-team-and-everyone-roles">
+                        <label for="YourTeam">Tell us about your team and everyone roles</label>
+                    </div>
+                </div>
+            </div>
+            <div class="next" style="display:none;" data-step="4">
+                <div class="row">
+                    <h5 class="headernote">What problem are you solving? </h5>
+                    <div class="counterNote"> 4/7</div>
+                    <div class="input-field col s6">
+                        <input id="Problem" type="text" class="validate" name="problems">
+                        <label for="Problem">What problem or problems are you solving?</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="Sulotion" type="text" class="validate" name="sulotion">
+                        <label for="Sulotion">What is your sulotion?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="Model" type="text" class="validate" name="buisiness-model">
+                        <label for="Model">What is your buisiness model?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="next" style="display:none;" data-step="5">
+                <div class="row">
+                    <h5 class="headernote">Who are your customers? </h5>
+                    <div class="counterNote"> 5/7</div>
+                    <div class="input-field col s6">
+                        <input id="Customers" type="text" class="validate" name="customers">
+                        <label for="Customers">Who are your first customers?</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="Competitor" type="text" class="validate" name="competitors">
+                        <label for="Competitor">Who are your competitors?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="Advantage" type="text" class="validate" name="advantage">
+                        <label for="Advantage">Explain your advantage from the competition</label>
+                    </div>
+                </div>
+            </div>
+            <div class="next" style="display:none;" data-step="6">
+                <div class="row">
+                    <h5 class="headernote">What are your costs?</h5>
+                    <div class="counterNote"> 6/7</div>
+                    <div class="input-field col s6">
+                        <input id="Costs" type="text" class="validate" name="costs">
+                        <label for="Costs">What are your costs for your first and second year?</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="Market" type="text" class="validate" name="market">
+                        <label for="Market">What is your market?Who are your customers?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="ShareAllocation" type="text" class="validate" name="allocation-model">
+                        <label for="ShareAllocation">What is the share allocation model between team members,investor
+                            and founders?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="next" id="last" style="display:none;" data-step="7">
+                <div class="row">
+                    <h5 class="headernote">Anything else? </h5>
+                    <div class="counterNote"> 7/7</div>
+                </div>
+                <div class="row" style="margin-bottom:0">
+                    <div class="input-field col s12">
+                        <input id="Extera" type="text" class="validate" name="Extera">
+                        <label for="Extera">Anything else you want to say</label>
+                    </div>
+                </div>
+            </div>
+            <span id='back' class="btn waves-effect waves-light sumbit"
+                  style="margin-top:40px; margin-right:40px;display:none;">back</span>
+            <button id='next' class="btn waves-effect waves-light sumbit" type="submit" name="next"
+                    style="margin-top:40px;">Next
+            </button>
+            <span id='submit' class="btn waves-effect waves-light sumbit" type="submit"
+                  style="margin-top:40px;display:none;">submit</span>
+        </form>
+        <div id="msg" class="next" style="margin-left: 210px;">
+            <h5 class="headernote">Validate & Evaluate Your
+                Idea</h5>
+            <p id="donemsg" style="display:none;"> Thank you very much. We will send your results to your email address
+                in 7 days. </p>
+            <img id="imgdone" src="round-done-button.svg" width="100px" STYLE="margin-top: 65px;display:none;"/>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 0">
+    <div class="col s8 offset-s2 center" id="msg2" style="letter-spacing:1px">
+        <p class="footernote1"> All of your information and your score is confidential and will not be shared with any
+            third parties. </p>
+        <p class="footernote1"> Disclaimer: By using this tool, you will not be guaranteed to be accepted to any of
+            Idearun programs. </p>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://www.twitter.com/idearunco" title="twitter"><i class="fa fa-twitter fa-fw "
+                                                                                   style="color:white;"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/idearun" title="linkdin"><i class="fa fa-linkedin fa-fw "
+                                                                                          style="color:white;"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer" style="font-size: 15px;">
+            All Rights Reserved. This is a Nonprofit project Powered by <a href="http://www.idearun.co" style="color: white;">idearun</a> &copy 2017
+        </p>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".headernote").fadeIn(2000);
+        $(".headernote2").fadeIn(3500);
+        $("div .input-field").show(1000);
+        //$("#startup").show(900);
+        $('#RegisterForm').submit(function (event) {
+
+            var Curdiv = $('.current');
+            var Nxtdiv = Curdiv.next();
+            if (Nxtdiv.attr('id') == 'last') {
+                $('#next').hide();
+                $('#submit').show();
+            }
+            if (Nxtdiv.attr('data-step') == '3') {
+                $("#Founders").attr("required", "true");
+            }
+            Curdiv.removeClass('current').addClass('next');
+            Nxtdiv.removeClass('next').addClass('current');
+            var pnum = (Nxtdiv.attr('data-step') / 7 ) * 100 + "%";
+            $(".determinate").css("width", pnum);
+            Nxtdiv.fadeIn(2000);
+            $('#back').show();
+            event.preventDefault();
+        });
+
+        $('#submit').on('click', function () {
+            $.ajax({
+                url: "https://formspree.io/roxana.sh108@yahoo.com",
+                method: "POST",
+                data: $('form').serialize(),
+                dataType: "json"
+            });
+            $('#RegisterForm').submit().hide();
+            $('.progress').hide();
+            $('#submit').hide();
+            $('#msg').show();
+            $('#donemsg').fadeIn(2000);
+            $('#imgdone').show(800);
+        });
+        $('#back').on('click', function () {
+            var Curdiv = $('.current');
+            var prvdiv = Curdiv.prev();
+            if (prvdiv.attr('id') == 'first') {
+                $('#back').hide();
+            }
+            if (Curdiv.attr('id') == 'last') {
+                $('#submit').hide();
+                $('#next').show();
+            }
+            var pnum = (prvdiv.attr('data-step') / 7 ) * 100 + "%";
+            $(".determinate").css("width", pnum);
+            Curdiv.removeClass('current').addClass('next');
+            prvdiv.removeClass('next').addClass('current');
+            prvdiv.fadeIn(2000);
+        });
+        $("#Start").on('click', function () {
+
+            $('#Start').hide();
+            $('.strbtn').hide();
+            $('#startup').show().animate({
+                opacity: 0.0,
+                top: "-=60vh"
+            }, 1000);
+            $('#p1').slideUp(700, function () {
+                $('#form1').slideDown(800)
+            });
+            $('.footernote1').hide();
+
+
+        })
+
+    });
+</script>
+
+
+</body>
+
+</html>

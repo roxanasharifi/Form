@@ -1,0 +1,94 @@
+@font-face {
+    font-family: dosis-medium;
+    src: url(fonts/dosis-medium.woff);
+}
+
+body{
+    background-image: linear-gradient(0deg, #0b1619 0%, #8dffcb 100%);
+    font-family:dosis-medium, sans-serif, Arial;
+    font-size: 1.1em;
+}
+#form1{
+    background-color: white;
+}
+#msg1{
+    color:white;
+    font-size: larger;
+}
+#msg2{
+    padding-top: 15px;
+    color:white;
+    font-size: larger;
+}
+h1 ,h2,h3,h4{
+    font-weight: 400;
+    line-height: 1.16667;
+}
+h3{
+    font-size: 24px;
+}
+li
+{
+
+    display: inline-block;
+}
+@font-face {
+    font-family: dosis-medium;
+    src: url(fonts/dosis-medium.woff);
+}
+
+body{
+
+    font-family:dosis-medium, sans-serif, Arial;
+
+}
+
+.current {
+    z-index: 10;
+}
+
+.next {
+    position: absolute;
+    display: none;
+}
+
+#Start {
+    margin-top: 20px;
+    width: 160px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: larger;
+}
+
+#Start:hover {
+    background-color: #294B42;
+}
+
+.counterNote {
+    font-size: small;
+    color: lightgray;
+    margin-bottom: 80px;
+}
+.headernote{
+    color:#2BBBAD;
+    display:none;
+}
+#startup{
+    display:none;
+    margin-top: 10px;
+    position: absolute;
+    top:50vh;
+    left: calc(50vw - 40px);
+    width:80px;
+}
+#form1{
+    padding:30px;
+    height:550px;
+    display:none;
+}
+.headernote2{
+    text-align:center;
+    color:#B4AA9E;
+    display:none;
+}
