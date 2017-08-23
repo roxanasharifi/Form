@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<img id="startup" src="start1.png"/>
+<img id="startup" src="img/start1.png"/>
 <div class="row" style="margin-bottom: 0;">
     <div class="col s8 offset-s2 center ">
         <a href="http://idearun.co/"> <img src="img/logo.png" style="margin-top:20px;"> </a>
@@ -32,7 +32,7 @@
 <div class="row" style="margin-bottom: 15px;">
     <div class="col s8 offset-s2 center">
         <button id='Start' class="sumbit btn waves-effect waves-light" type="submit" name="Start"
-                style="padding-left:20px;"><img src="startup.svg" width="20px"/> Start
+                style="padding-left:20px;"><img src="img/startup.svg" width="20px"/> Start
         </button>
     </div>
 </div>
@@ -195,7 +195,7 @@
                 Idea</h5>
             <p id="donemsg" style="display:none;"> Thank you very much. We will send your results to your email address
                 in 7 days. </p>
-            <img id="imgdone" src="round-done-button.svg" width="100px" STYLE="margin-top: 65px;display:none;"/>
+            <img id="imgdone" src="img/round-done-button.svg" width="100px" STYLE="margin-top: 65px;display:none;"/>
         </div>
     </div>
 </div>
@@ -252,7 +252,7 @@
 
         $('#submit').on('click', function () {
             $.ajax({
-                url: "https://formspree.io/roxana.sh108@yahoo.com",
+                url: "https://formspree.io/info@idearun.co",
                 method: "POST",
                 data: $('form').serialize(),
                 dataType: "json"
