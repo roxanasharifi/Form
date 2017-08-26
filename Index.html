@@ -37,10 +37,10 @@
         </button>
     </div>
 </div>
-<div class="row" style="margin-bottom: 0;">
+<div class="row" style="margin-bottom: 0;" id="form-wrapper">
 
 
-    <div class="col s12 l8 offset-l2 z-depth-3 center " id="form1">
+    <div class="col s12 l8 m10 offset-l2 offset-m1 z-depth-3 center " id="form1">
         <div class="progress col s8 offset-s2">
             <div class="determinate" style="width:14%"></div>
         </div>
@@ -66,8 +66,7 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="input-field col s12" style="display:none;">
+                <div class="row"><div class="input-field col s12" style="display:none;">
                         <input id="email" type="email" class="validate" name="Email" required>
                         <label for="email" data-error="Invalid Email">Email</label>
                     </div>
@@ -176,20 +175,26 @@
                     <h5 class="headernote">Anything else? </h5>
                     <div class="counterNote"> 7/7</div>
                 </div>
-                <div class="row" style="margin-bottom:0">
+                <div class="row" style="margin-bottom:100px">
                     <div class="input-field col s12">
                         <input id="Extera" type="text" class="validate" name="Extera">
                         <label for="Extera">Anything else you want to say</label>
                     </div>
                 </div>
             </div>
-            <span id='back' class="btn waves-effect waves-light sumbit"
-                  style="margin-top:15px;margin-bottom:35px; margin-right:25px;display:none;">back</span>
-            <button id='next' class="btn waves-effect waves-light sumbit" type="submit" name="next"
-                    style="margin-top:15px;margin-bottom:35px;">Next
-            </button>
-            <span id='submit' class="btn waves-effect waves-light sumbit" type="submit"
-                  style="margin-top:15px;margin-bottom:35px;display:none;">submit</span>
+            <div class="row">
+                <div class="col l12 s12 m12">
+                <span id='back' class="btn waves-effect waves-light sumbit"
+                      style="margin-top:30px;margin-bottom:15px; margin-right:25px;display:none;">back</span>
+                    <button id='next' class="btn waves-effect waves-light sumbit" type="submit" name="next"
+                            style="margin-top:30px;margin-bottom:15px;">Next
+                    </button>
+                    <span id='submit' class="btn waves-effect waves-light sumbit" type="submit"
+                          style="margin-top:30px;margin-bottom:15px;display:none;">submit</span>
+                </div>
+            </div>
+
+
 
         </form>
 
@@ -203,8 +208,6 @@
                 <img id="imgdone" src="img/round-done-button.svg" width="100px" STYLE="margin-top: 65px;display:none;"/>
             </div>
         </div>
-
-
     </div>
 </div>
 <div class="row" style="margin-bottom: 0">
